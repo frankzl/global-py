@@ -90,7 +90,7 @@ if __name__ == '__main__':
         mkdir(MY_GLOBAL)
         tmp = input("At last, I will add this directory to your PATH\nPress Enter to proceed")
         
-        run = "echo 'PATH=\""+MY_GLOBAL+":$PATH\"' >> " + config_path
+        run = "echo 'export PATH=\""+MY_GLOBAL+":$PATH\"' >> " + config_path
         print(run)
         os.system(run)
         print("congrats! Ready to go :)")
