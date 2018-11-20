@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     entry_points=
     {
-        "console_scripts": ["globalize = globalize_script.global_setup.py"]
+        "console_scripts": ["pyglobal = pyglobal.global_setup.py"]
     },
 )
 
