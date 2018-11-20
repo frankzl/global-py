@@ -59,9 +59,6 @@ def is_available(python_version):
         return path
     return None
 
-if __name__ == '__main__':
-    main()
-
 def main():
 
     import argparse
@@ -108,4 +105,8 @@ def main():
                 link( target, MY_GLOBAL )
             else:
                 link( target, MY_GLOBAL, args.alias[idx] )
+
+if __name__ == '__main__':
+    main()
+
 
