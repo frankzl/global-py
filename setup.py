@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="global-py",
+    name="globalpy2",
     version="0.0.1",
     author="Frank Lu",
     author_email="frankz.lu@gmail.com",
@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     entry_points=
     {
-        "console_scripts": ["globalpy = globalpy.global_setup.py"],
+        "console_scripts": ["globalpy = globalpy.global_setup.py:main"],
     },
 )
 

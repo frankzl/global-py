@@ -75,7 +75,7 @@ if __name__ == '__main__':
     use_py = "python3" if args.pyversion is None else args.pyversion
 
     HOME = os.getenv("HOME")
-    MY_GLOBAL = os.path.join( HOME, "pyglobal-bin" )
+    MY_GLOBAL = os.path.join( HOME, "globalpy-bin" )
 
     mkdir(MY_GLOBAL)
 
