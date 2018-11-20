@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     entry_points=
     {
-        "console_scripts": ["globalpy = globalpy.global_setup.py"]
+        "console_scripts": ["globalpy = globalpy.global_setup.py"],
     },
 )
 
