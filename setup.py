@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pyglobal",
+    name="globalpy",
     version="0.0.1",
     author="Frank Lu",
     author_email="frankz.lu@gmail.com",
     description="Make your python scripts globally accessible!",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/frankzl/globalize-python-script",
+    url="https://github.com/frankzl/globalpy",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     entry_points=
     {
-        "console_scripts": ["pyglobal = pyglobal.global_setup.py"]
+        "console_scripts": ["globalpy = globalpy.global_setup.py"]
     },
 )
 
