@@ -60,6 +60,9 @@ def is_available(python_version):
     return None
 
 if __name__ == '__main__':
+    main()
+
+def main():
 
     import argparse
 
