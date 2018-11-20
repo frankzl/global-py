@@ -36,3 +36,7 @@ When no alias is specified, the filename will be used as an alias:
 
 
 ![alt img <>](demo/default.png)
+
+## License
+
+License can be found [here](https://github.com/frankzl/globalpy/blob/master/LICENSE)
