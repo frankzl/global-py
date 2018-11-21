@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="globalpy4",
+    name="global-py",
     version="0.0.1",
     author="Frank Lu",
     author_email="frankz.lu@gmail.com",

@@ -2,7 +2,9 @@
 The package **pyglobal** allows you to execute your python scripts globally
 
 ## Available on pypi
-`pip install globalpy`
+Finally deployed on pypi!
+
+`pip install global-py`
 
 ## How to use?
 
