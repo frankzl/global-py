@@ -4,6 +4,8 @@ import sys
 import stat
 from subprocess import Popen, PIPE
 
+from __init__ import __package_name__, __description__, __version__
+
 def mkdir(DIR):
     if not os.path.exists(DIR):
         os.makedirs(DIR)
@@ -65,6 +67,8 @@ def main():
 
     parser = argparse.ArgumentParser(prog="globalize")
     
+    parser.add_argument("--version", "-v", action="store_true", help="show globalpy version")
+
     parser.add_argument("--setup", "-s", action="store_true", help="run only once after installing module")
 
     parser.add_argument("--target", "-t", help="target file that should become a global command (multiple targets possible)", nargs="+")
@@ -94,6 +98,9 @@ def main():
         print(run)
         os.system(run)
         print("congrats! Ready to go :)")
+    elif args.version:
+        print(__package_name__ + '\n' + __description__ + '\n' +
+                "Version: " + __version__ )
     else:
         if args.target is None:
             print("Must specify either -s or -t")
